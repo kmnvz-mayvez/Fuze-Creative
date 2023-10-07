@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 1rem 3rem;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#right-nav {
+  display: flex;
+}
+
+#right-nav a {
+  padding-left: 2rem;
+}
+
+#text-logo a {
+  font-size: xx-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+  background-color: #222;
+  color: white;
+}
+
+#body #body-top-section {
+  padding-top: 2rem;
+  width: 100%;
+  padding-bottom: 2rem;
+  background-image: url(asset/banner.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#body #body-top-section>div {
+  text-align: center;
+  width: 60%;
+}
+
+#body #body-second-section {
+  padding-top: 2rem;
+  width: 100%;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#body #body-second-section>div {
+  text-align: center;
+  width: 60%;
+}
+
+.card-testimoni {
+  width: 24%;
+  background-color: white;
+  color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-testimoni:nth-child(3n + 1) .card-testimoni-bottom {
+  background-color: #fb8b8a;
+}
+
+.card-testimoni:nth-child(3n + 1) .card-testimoni-center {
+  background: linear-gradient(180deg, #fff 50%, #fb8b8a 50%);
+}
+
+.card-testimoni:nth-child(3n + 2) .card-testimoni-bottom {
+  background-color: #5e69c3;
+}
+
+.card-testimoni:nth-child(3n + 2) .card-testimoni-center {
+  background: linear-gradient(180deg, #fff 50%, #5e69c3 50%);
+}
+
+.card-testimoni:nth-child(3n + 0) .card-testimoni-bottom {
+  background-color: #46c1bf;
+}
+
+.card-testimoni:nth-child(3n + 0) .card-testimoni-center {
+  background: linear-gradient(180deg, #fff 50%, #46c1bf 50%);
+}
+
+.card-testimoni-bottom {
+  padding: 1rem;
+  color: white;
+}
+
+.card-testimoni-top {
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.card-testimoni h4 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.card-testimoni h5 {
+  margin-top: 0px;
+}
+
+.card-testimoni img {
+  width: 40%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#container-testimoni {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#footer {
+  padding: 2rem;
+  border-top: 1px solid gray;
+  text-align: center;
+}
+
+#album-container {
+  text-align: left;
+}
+
+.album-name {
+  display: flex;
+  flex-direction: column;
+}
+
+#album-container td {
+  padding: 1rem;
+}
+
+form tr td {
+  padding: 1rem 2rem;
+  vertical-align: top;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.form-control {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  color: rgb(80, 80, 80);
+  box-sizing: border-box;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+form table {
+  display: flex;
+  justify-content: center;
+}
+
+.card-price {
+  background-color: #0091f6;
+  color: white;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1500px) {
+  .card-testimoni {
+    width: 28%;
+  }
+
+  #body #body-second-section>div {
+    text-align: center;
+    width: 80%;
+  }
+
+  #body #body-top-section>div {
+    text-align: center;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar {
+    flex-direction: column;
+  }
+
+  #left-nav {
+    padding-bottom: 1rem;
+  }
+
+  .card-testimoni {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #right-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #right-nav>div {
+    padding-bottom: 1rem;
+  }
+
+  #right-nav a {
+    padding: 0rem;
+  }
+
+  #left-nav {
+    padding-bottom: 1rem;
+  }
+
+  #body #body-second-section>div {
+    text-align: center;
+    width: 100%;
+  }
+
+  #body #body-top-section>div {
+    text-align: center;
+    width: 100%;
+  }
+
+  #container-testimoni {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-testimoni {
+    width: 90%;
+  }
+}

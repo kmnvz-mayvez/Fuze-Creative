@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album | Fuze Creative</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="navbar">
+            <div id="left-nav">
+                <div id="text-logo">
+                    <a href="home.html">Fuze Creative</a>
+                </div>
+            </div>
+            <div id="right-nav">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="album.html">Album</a></div>
+                <div><a href="pricing.html">Pricing</a></div>
+                <div><a href="about-us.html">About Us</a></div>
+                <div><a href="hot-offer.html">Hot Offer</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <div id="body-second-section">
+            <div>
+                <h1>Album</h1>
+                <div>
+                    <div>
+                        <img src="asset/album-image.jpg" alt="">
+                    </div>
+                    <div>Top 20 Songs</div>
+                </div>
+                <div id="album-container">
+                    <h4>Daftar Lagu</h4>
+                    <table>
+                        <tr onmouseover="play(1)" onmouseout="pause(1)">
+                            <td>1</td>
+                            <td>
+                                <div class="album-name">
+                                    <audio id="audio1">
+                                        <source src="asset/Cuek.mp3" type="audio/mpeg" muted>
+                                    </audio>
+                                    <b>Cuek</b>
+                                    <small>Rizky Febian</small>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onmouseover="play(2)" onmouseout="pause(2)">
+                            <td>2</td>
+                            <td>
+                                <div class="album-name">
+                                    <audio id="audio2">
+                                        <source src="asset/Pura-pura lupa.mp3" type="audio/mpeg" muted>
+                                    </audio>
+                                    <b>Pura Pura Lupa</b>
+                                    <small>Mahen</small>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onmouseover="play(3)" onmouseout="pause(3)">
+                            <td>3</td>
+                            <td>
+                                <div class="album-name">
+                                    <audio id="audio3">
+                                        <source src="asset/MUNGKIN HARI INI ESOK ATAU NANTI.mp3" type="audio/mpeg"
+                                            muted>
+                                    </audio>
+                                    <b>Mungkin Hari Ini Esok Atau Nanti</b>
+                                    <small>Anneth</small>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+         © Fuze Creative - 2021
+    </div>
+</body>
+<script src="global.js"></script>
+
+</html>
